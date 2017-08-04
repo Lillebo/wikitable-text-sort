@@ -125,7 +125,7 @@ function outputSorted(tableData, headers, rows) {
 
 	const outputFileName = inputFileName.replace('.txt', '-sorted.txt');
 
-	fs.writeFile('output/'+outputFileName, outputString, (error) => {
+	fs.writeFile(outputFileName, outputString, (error) => {
 		if (error) throw error;
 
 		console.log('Sorting complete!');
